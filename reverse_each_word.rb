@@ -1,15 +1,17 @@
-def reverse_each_word(sentence)
-  new_sentence = sentence.split(" ")
-  new_sentence.each do |x|
-    new_sentence << x.reverse
+def reverse_each_word_with_each(string)
+  original_array = string.split(" ")
+  return_array = []
+  original_array.each do|string|
+    return_array << string.reverse
   end
-  new_sentence.join(" ")
+  return_array.join(" ")
 end
 
-def reverse_each_word_two(word)
-  word.split(" ")
-  word.collect do |x|
-    x.reverse
+def reverse_each_word(string)
+  array = string.split(" ") 
+  test_array = []
+  array.collect do|string| 
+    test_array << string.reverse 
   end
-  word.join(" ")
+  test_array.join(" ")
 end
