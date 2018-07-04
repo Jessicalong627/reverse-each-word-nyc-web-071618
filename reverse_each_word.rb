@@ -13,4 +13,3 @@ def reverse_each_word_two(word)
   end
   word.join(" ")
 end
-
